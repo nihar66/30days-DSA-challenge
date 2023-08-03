@@ -15,10 +15,10 @@ def breakingRecords(scores):
     for i in range(len(scores)):
         if(scores[i]>maxi):
             maxi = scores[i]
-            maxcount+=1
+            maxcount +=1
         if(scores[i]<mini):
             mini = scores[i]
-            mincount+=1
+            mincount +=1
     return [maxcount, mincount]
 
 if __name__ == '__main__':
