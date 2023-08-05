@@ -1,0 +1,10 @@
+if position == 0:
+        return llist.next
+    temp = llist
+    for _ in range(position - 1):
+        temp = temp.next
+        if temp is None or temp.next is None:
+            return llist
+        
+    temp.next = temp.next.next
+    return llist
