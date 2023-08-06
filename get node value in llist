@@ -1,0 +1,14 @@
+def getNode(llist, positionFromTail):
+    # Write your code here
+    slow_ptr = llist
+    fast_ptr = llist
+
+
+    for _ in range(positionFromTail):
+        fast_ptr = fast_ptr.next
+    while fast_ptr.next is not None:
+        slow_ptr = slow_ptr.next
+        fast_ptr = fast_ptr.next
+
+    
+    return slow_ptr.data
